@@ -80,17 +80,6 @@ Se implementaron reglas específicas:
 - Obras finalizadas sin fecha fin.
 - Inconsistencias temporales (fecha inicio > fecha fin).
 - Cuentas presupuestarias incompletas.
-
-Ejemplo de medida:
-
-```DAX
-% Indice Calidad General =
-1 - DIVIDE(
-    [Total Errores Detectados],
-    [Total Registros Evaluados],
-    0
-)```
-
 ---
 
 ### 4️⃣ Modelado
@@ -105,55 +94,6 @@ Se diseñó un modelo dimensional con enfoque analítico y control de calidad.
 - Optimización de medidas para evitar cálculos redundantes.
 
 El objetivo fue garantizar consistencia, escalabilidad y claridad en el análisis.
-
----
-
-## Visualizaciones Principales
-
-### Flujo de Inversión
-
-Permite comparar monto comprometido, pagado y total, brindando una visión clara de la ejecución presupuestaria.
-
-**Pregunta que responde:**  
-> ¿Cómo se está ejecutando el presupuesto asignado?
-
----
-
-### Distribución Territorial
-
-Analiza la concentración de obras por distrito.
-
-**Pregunta que responde:**  
-> ¿Dónde se está concentrando la inversión pública?
-
----
-
-### Top Contratistas
-
-Identifica los proveedores con mayor volumen adjudicado.
-
-**Pregunta que responde:**  
-> ¿Existe concentración de mercado o dependencia de proveedores específicos?
-
----
-
-### Monitor de Calidad de Datos
-
-Se implementó una sección dedicada exclusivamente a evaluar la confiabilidad del dataset.
-
-Incluye:
-
-- Índice Global de Calidad del Dato.
-- Total de errores detectados.
-- Total de registros evaluados.
-- Distribución de inconsistencias por tabla.
-- Listado detallado de registros con error.
-
-**Pregunta que responde:**  
-> ¿Qué tan confiables son los datos utilizados para el análisis?
-
----
-
 ## Herramientas Utilizadas
 
 - Power BI Desktop  
@@ -166,7 +106,7 @@ Incluye:
 
 ## Estructura del Repositorio
 
-inversion-publica-bi
+obrasLujan
 │
 ├── data/
 │ ├── raw/
@@ -186,13 +126,6 @@ inversion-publica-bi
 │ ├── Calidad_Datos.pdf
 │
 ├── README.md
----
-
-## Recursos
-
-- Documentación técnica sobre evaluación de calidad: LINK_DOCUMENTACION  
-- Dataset original: incluido en carpeta `/data`
-
 ---
 
 ## Aprendizajes
