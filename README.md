@@ -104,30 +104,6 @@ El objetivo fue garantizar consistencia, escalabilidad y claridad en el análisi
 
 ---
 
-## Estructura del Repositorio
-
-obrasLujan
-│
-├── data/
-│ ├── raw/
-│ │ ├── presupuesto_2025.xlsx
-│ │ ├── licitacion_2025.xlsx
-│ │ └── obras_publicas_2025.xlsx
-│ │
-│ ├── working/
-│ │ ├── presupuesto_2025_mod.xlsx
-│ │ ├── licitacion_2025_mod.xlsx
-│ │ └── obras_publicas_2025_mod.xlsx
-│
-├── dashboard/
-│ └── ObrasLujan.pbix
-│
-├── docs/
-│ ├── Calidad_Datos.pdf
-│
-├── README.md
----
-
 ## Aprendizajes
 
 - La calidad del análisis depende directamente de la calidad del dato.
